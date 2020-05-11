@@ -2,7 +2,7 @@
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
       <v-avatar size="300" data-aos="fade-up" data-aos-once="true">
-        <img src="@/assets/andon.jpg" />
+        <v-img :src="icon_src" />
       </v-avatar>
       <div>
         <h2>Andon</h2>
@@ -25,8 +25,7 @@
 export default {
   data() {
     return {
-      github_icon_src: require("@/assets/github.png"),
-      twitter_icon_src: require("@/assets/twitter.png")
+      icon_src: require("@/assets/andon.jpg")
     };
   },
   props: {
