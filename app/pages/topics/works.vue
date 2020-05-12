@@ -2,21 +2,13 @@
   <div>
     <h2 class="mt-6 mb-6">BLOG</h2>
     <v-divider></v-divider>
-    <v-layout
-      column
-      justify-center
-      align-center
-    >
-      <v-flex
-        xs12
-        sm8
-        md6
-      >
-        <v-card class="xs6 sm6 md6">
-          <v-card-title>Blogタイトル</v-card-title>
+    <v-row class="mb-6" no-gutters>
+      <v-col v-for="n in 3" :key="n" :cols="n === 2 ? 6 : undefined">
+        <v-card class="pa-2" outlined tile>
+          {{ n }} of 3 {{ n === 2 ? "(wider)" : "" }}
         </v-card>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
