@@ -1,14 +1,24 @@
 <template>
   <div>
-    <v-tabs color="grey darken-4" v-model="tab">
+    <h2 class="mt-6 mb-6">SKILL SET</h2>
+    <v-divider></v-divider>
+    <v-tabs
+      color="grey darken-4"
+      v-model="tab"
+    >
       <v-tabs-slider color="grey" />
-      <v-tab v-for="item in tab_items" :key="item.link" :href="`#${item.link}`">
-        {{ item.link_name }}
-      </v-tab>
+      <v-tab
+        v-for="item in tab_items"
+        :key="item.link"
+        :href="`#${item.link}`"
+      >{{ item.link_name }}</v-tab>
     </v-tabs>
 
     <v-tabs-items v-model="tab">
-      <v-tab-item v-for="(contents, i) in front_contents" :key="`fc_${i}`">
+      <v-tab-item
+        v-for="(contents, i) in front_contents"
+        :key="`fc_${i}`"
+      >
         <v-card flat>
           <v-card-text>{{ contents.topic }}</v-card-text>
         </v-card>
@@ -23,27 +33,27 @@ export default {
     return {
       tab: null,
       tab_items: [
-        { link: "frontend", link_name: "FRONT" },
-        { link: "backend", link_name: "BACK" },
-        { link: "infrastructure", link_name: "INFRA" }
+        { link: 'frontend', link_name: 'FRONT' },
+        { link: 'backend', link_name: 'BACK' },
+        { link: 'infrastructure', link_name: 'INFRA' },
       ],
       front_contents: [
-        { topic: "Javascript", point: "3", detail: "初級程度" },
-        { topic: "Javascript", point: "3", detail: "初級程度" },
-        { topic: "Javascript", point: "3", detail: "初級程度" }
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
       ],
       back_contents: [
-        { topic: "Javascript", point: "3", detail: "初級程度" },
-        { topic: "Javascript", point: "3", detail: "初級程度" },
-        { topic: "Javascript", point: "3", detail: "初級程度" }
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
       ],
       infra_contents: [
-        { topic: "Javascript", point: "3", detail: "初級程度" },
-        { topic: "Javascript", point: "3", detail: "初級程度" },
-        { topic: "Javascript", point: "3", detail: "初級程度" }
-      ]
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
+        { topic: 'Javascript', point: '3', detail: '初級程度' },
+      ],
     };
-  }
+  },
 };
 </script>
 

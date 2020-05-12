@@ -5,17 +5,20 @@
         <v-img :src="icon_src" />
       </v-avatar>
       <div>
-        <h2>Andon</h2>
+        <h2>まさ</h2>
+        <h3>LINKS</h3>
+        <div>
+          <v-icon>fab fa-twitter</v-icon>
+          <v-icon>fab fa-github</v-icon>
+        </div>
         <h3>長所</h3>
         <p>一番好きなのは</p>
         <h3>短所</h3>
         <p>一番好きなのは</p>
         <h3>趣味</h3>
         <p>なんやらかんやら</p>
-      </div>
-      <div>
-        <v-icon>fab fa-twitter</v-icon>
-        <v-icon>fab fa-github</v-icon>
+        <h3>自己PR</h3>
+        <p></p>
       </div>
     </v-flex>
   </v-layout>
