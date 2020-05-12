@@ -1,7 +1,19 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <v-avatar size="300" data-aos="fade-up" data-aos-once="true">
+  <v-layout
+    column
+    justify-center
+    align-center
+  >
+    <v-flex
+      xs12
+      sm8
+      md6
+    >
+      <v-avatar
+        size="300"
+        data-aos="fade-up"
+        data-aos-once="true"
+      >
         <v-img :src="icon_src" />
       </v-avatar>
       <div>
@@ -28,14 +40,14 @@
 export default {
   data() {
     return {
-      icon_src: require("@/assets/andon.jpg")
+      icon_src: require('@/assets/andon.jpg'),
     };
   },
   props: {
     drawer: {
       type: Boolean,
-      default: false
-    }
-  }
+      default: false,
+    },
+  },
 };
 </script>

@@ -1,6 +1,9 @@
 <template>
   <v-card>
-    <v-app-bar fixed app>
+    <v-app-bar
+      fixed
+      app
+    >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
@@ -10,17 +13,17 @@
 </template>
 
 <script>
-import NavigationDrawer from "~/components/NavigationDrawer.vue";
+import NavigationDrawer from '~/components/NavigationDrawer.vue';
 
 export default {
   components: {
-    NavigationDrawer
+    NavigationDrawer,
   },
   data() {
     return {
       drawer: false,
-      title: "Andon's Portfolio"
+      title: "Andon's Portfolio",
     };
-  }
+  },
 };
 </script>
